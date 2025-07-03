@@ -61,7 +61,7 @@
 			"kind": "user",
 			"methods": {
 				"withdraw()": {
-					"notice": "This function is prone to reentrant attack as the modification of state variable is done after the interaction with external contract"
+					"notice": "This function is protected against reentrant attack, as it's following the CHECK-EFFECT-INTERACTION pattern"
 				}
 			},
 			"version": 1
@@ -69,7 +69,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/FundRaiser.sol": "FundRaiser"
+			"contracts/UpdatedFundRaiser.sol": "FundRaiser"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -83,12 +83,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/FundRaiser.sol": {
-			"keccak256": "0xb1dc27561f2bdd15507bc36f3a2339fa0ba15311ceaeb0c89d4ea363c9b7155a",
+		"contracts/UpdatedFundRaiser.sol": {
+			"keccak256": "0xf79d717114571b55535eec74a35fe9563291116d2ff63a21f81cce5d70890f15",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://860c12a6bf123616bbca68129d09374f96ffd88efae2b638566ab04e743aadd7",
-				"dweb:/ipfs/Qmakp5s7UYQRNJGN5zk85JokE71rFYtdCV2ChLsQXp29TW"
+				"bzz-raw://6414d32bf930fd216795eafc521864094c86712493f594394daa30657a333cd0",
+				"dweb:/ipfs/QmREfk8MzHGLkAdNGpypvsqTkNfRMuuBJmQ3h9HdSJY6PU"
 			]
 		}
 	},

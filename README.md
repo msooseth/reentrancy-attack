@@ -19,6 +19,8 @@ This hack resulted in famous **hard fork** which led to Ethereum and Ethereum Cl
 8. Call getFunds on Attacker. Should show 0. The attacker has 0 funds currently.
 9. Call withdrawFunds on Attacker. This is the attack.
 10. Call getFunds on Attacker. Should show 1600 -- 4x what the Attacker deposited!
+11. Delete both deployed contracts. Re-deploy both, but this time, build & deploy the UpdatedFundRaiser
+12. Add funds to both, and try to drain via attack. The attack should fail.
 
 ## Disclaimer
 Use this repo for the purpose of study.
