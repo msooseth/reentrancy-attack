@@ -1,4 +1,4 @@
-# Reentrancy-attack
+# DAO Reentrancy Attack Replay and Fix
 A replication of DAO Hack vulnerability
 
 ## Prerequisite
