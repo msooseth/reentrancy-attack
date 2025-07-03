@@ -6,21 +6,26 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "deposit",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
 					}
 				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "depositFunds",
+				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "getTotalFunds",
+				"name": "getFunds",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -33,23 +38,14 @@
 			},
 			{
 				"inputs": [],
-				"name": "myBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "withdraw",
+				"name": "withdrawFunds",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -59,17 +55,13 @@
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {
-				"withdraw()": {
-					"notice": "This function is prone to reentrant attack as the modification of state variable is done after the interaction with external contract"
-				}
-			},
+			"methods": {},
 			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/FundRaiser.sol": "FundRaiser"
+			"contracts/Attacker.sol": "Attacker"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -83,12 +75,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/FundRaiser.sol": {
-			"keccak256": "0xb1dc27561f2bdd15507bc36f3a2339fa0ba15311ceaeb0c89d4ea363c9b7155a",
+		"contracts/Attacker.sol": {
+			"keccak256": "0x703e321e669347500570fa9f62d4e44024cba20459cb425c55b6e8c527203b28",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://860c12a6bf123616bbca68129d09374f96ffd88efae2b638566ab04e743aadd7",
-				"dweb:/ipfs/Qmakp5s7UYQRNJGN5zk85JokE71rFYtdCV2ChLsQXp29TW"
+				"bzz-raw://75f4bedbbb2859c16944aaf1e2f86f082512c8d6a5e5d3d2c5803b18a8110288",
+				"dweb:/ipfs/QmabSN1QRTe87HUh2ht1yZ5jHSYpRQWE9wNYFp6Fv1MsDZ"
 			]
 		}
 	},

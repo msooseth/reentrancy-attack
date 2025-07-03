@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Attacker.sol": "FundInterface"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Attacker.sol": {
+			"keccak256": "0x703e321e669347500570fa9f62d4e44024cba20459cb425c55b6e8c527203b28",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://75f4bedbbb2859c16944aaf1e2f86f082512c8d6a5e5d3d2c5803b18a8110288",
+				"dweb:/ipfs/QmabSN1QRTe87HUh2ht1yZ5jHSYpRQWE9wNYFp6Fv1MsDZ"
+			]
+		}
+	},
+	"version": 1
+}
