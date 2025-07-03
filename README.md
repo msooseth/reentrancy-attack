@@ -10,16 +10,15 @@ This hack resulted in famous **hard fork** which led to Ethereum and Ethereum Cl
 
 ## Step-by-Step Guide
 1. Load the GitHub repo
-2. Compile
-3. Deploy FundRaiser
-4. Deploy Attacker, with FundRaiser address as parameter
-5. Set Value to 10000 and call `deposit` on Fundraiser. This will deposit money on YOUR balance
-6. Call getTotalFunds on Fundraiser. Should show 10000.
-7. Set Value to 400 and call `depositFunds` on Attacker. This will deposit money on the ATTACKER's balance
-8. Call getTotalFunds on Fundraiser. Should show 10400.
-9. Call getFunds on Attacker. Should show 0. The attacker has 0 funds currently.
-10. Call withdrawFunds on Attacker. This is the attack.
-11. Call getFunds on Attacker. Should show 1600 -- 4x what the Attacker deposited!
+2. Compile & Deploy FundRaiser
+3. Compile & Deploy Attacker, with FundRaiser address as parameter
+4. Set Value to 10000 and call `deposit` on Fundraiser. This will deposit money on YOUR balance
+5. Call getTotalFunds on Fundraiser. Should show 10000.
+6. Set Value to 400 and call `depositFunds` on Attacker. This will deposit money on the ATTACKER's balance
+7. Call getTotalFunds on Fundraiser. Should show 10400.
+8. Call getFunds on Attacker. Should show 0. The attacker has 0 funds currently.
+9. Call withdrawFunds on Attacker. This is the attack.
+10. Call getFunds on Attacker. Should show 1600 -- 4x what the Attacker deposited!
 
 ## Disclaimer
 Use this repo for the purpose of study.
